@@ -15,7 +15,8 @@ describe('Controller: AuthorsCtrl', function () {
     });
   }));
 
-  it('should ...', function () {
-    expect(1).toEqual(1);
+  it('should scope have authors', function () {
+    scope.authors = [{name: 'me'}];
+    expect(scope.authors.length).toEqual(1);
   });
 });

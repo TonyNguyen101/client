@@ -65,6 +65,7 @@ module.exports = function(config) {
       // 'client/app/projects/project/project.controller.spec.js',
       // 'client/app/projects/projects.controller.spec.js',
       'client/app/main/main.controller.spec.js',
+      'client/app/services/AuthenticationService.spec.js'
     ],
 
     // web server port
@@ -76,7 +77,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
 
     // Start these browsers, currently available:
@@ -87,8 +88,8 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['Chrome'],
-
+    // browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
